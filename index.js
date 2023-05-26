@@ -140,7 +140,7 @@ const getTax = () => {
     if (income < 250000) {
         tax = 0;
     }
-    else if (income >= 250000 && income <= 500000) {
+    else if (income >= 250000 && income < 500000) {
         tax = (income - 250000) * 0.05;
     }
     else if (income >= 500000 && income <= 800000) {
