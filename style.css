@@ -9,6 +9,17 @@ body {
     height: 100vh;
 }
 
+.primary-text {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background-clip: text;
+    background: -webkit-linear-gradient(47deg, #57A0FE, #985fd9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .input-div {
     background: linear-gradient(92.49deg, rgba(255, 255, 255, 0.1) 0.18%, rgba(255, 255, 255, 0.05) 99.85%);
     backdrop-filter: blur(5px);
@@ -48,6 +59,15 @@ body {
     backdrop-filter: blur(5px);
     padding: 2rem;
     border-radius: 15px;
+    position: relative;
+}
+.i-btn{
+    position: fixed;
+    right: 1.2rem;
+    top: 0.6rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #b9eef7;
 }
 
 .label {
@@ -63,6 +83,8 @@ body {
 
 .submitBtn {
     border-radius: 50px;
+    background: linear-gradient(47deg, #57A0FE, #985fd9);
+    /* background: linear-gradient(75deg, #ff3b4f, #23126f); */
 }
 
 .person-income {
@@ -94,6 +116,49 @@ body {
     font-size: 1.3rem;
 }
 
+.save {
+    color: rgb(146, 225, 251);
+    position: absolute;
+    cursor: pointer;
+    right: 0.4em;
+    bottom: 0.4em;
+    font-size: 1rem;
+}
+
+.save i {
+    font-size: 1rem;
+}
+
 .delete:hover {
     color: rgb(255, 60, 0);
 }
+
+/* all modal classes  */
+.modal-content {
+    border-radius: 0.5rem !important;
+    background: linear-gradient(97.64deg, rgba(49, 52, 108, 0.562) 15.56%, rgba(94, 85, 153, 0.88) 92.85%);
+    backdrop-filter: blur(10px);
+
+}
+
+.modalBtn-closer {
+    font-size: 2rem;
+    color: #f54859;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    background: white;
+    border-radius: 70%;
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width:577px) {
+    .modalBtn-closer {
+        right: -7px;
+        top: -7px;
+    }
+}
+
+
+/* .....................  */
